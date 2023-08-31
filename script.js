@@ -18,7 +18,7 @@ function decideMove () {
   } else if (randomNum >= 1/3 && randomNum < 2/3) {
     compMove = 'paper';
   } else if (randomNum >= 2/3 && randomNum < 1) {
-    compMove = 'scissor';
+    compMove = 'scissors';
   }
 }
 
@@ -34,11 +34,11 @@ function gamePlay (compMove, userMove) {
     result = 'You win.';
   }
 
-  else if (compMove === 'paper' && userMove === 'scissor') {
+  else if (compMove === 'paper' && userMove === 'scissors') {
     result = 'You win.';
   }
 
-  else if (compMove === 'scissor' && userMove === 'rock') {
+  else if (compMove === 'scissors' && userMove === 'rock') {
     result = 'You win.';
   }
 
@@ -46,11 +46,11 @@ function gamePlay (compMove, userMove) {
     result = 'You lose.';
   }
 
-  else if (compMove === 'scissor' && userMove === 'paper') {
+  else if (compMove === 'scissors' && userMove === 'paper') {
     result = 'You lose.';
   }
 
-  else if (compMove === 'rock' && userMove === 'scissor') {
+  else if (compMove === 'rock' && userMove === 'scissors') {
     result = 'You lose.';
   }
 
